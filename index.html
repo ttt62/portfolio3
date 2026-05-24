@@ -9,7 +9,7 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
-  <!-- p5.js（CDNから読み込む）-->
+  <!-- p5.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
 
   <!-- あなたの p5.js コード -->
@@ -23,25 +23,24 @@
 
   <header class="head">
     <div class="container">
-
-      <!-- ★ ここにあった iframe は削除（p5.js は iframe では動かない） -->
-      <!-- p5.js のキャンバスは自動でここに表示される -->
-
       <img src="media/名称未設定-1.png" class="img">
     </div>
   </header>
 
   <main>
-    <explain class="ex">
+
+    <!-- ★ explain → div に修正 -->
+    <div class="ex">
       <p>
         夜空に浮かぶ神秘的な光のカーテン。世界各地で観測された美しいオーロラの風景を宮城大学で一緒に鑑賞しましょう。
       </p>
       <p>期間 2024年2月1日～3月1日</p>
       <p>時間 10:00～17:00</p>
       <p>場所 宮城大学 大和キャンパス</p>
-    </explain>
+    </div>
 
-    <kind class="kind">
+    <!-- ★ kind → div に修正 -->
+    <div class="kind">
       <div class="container2">
 
         <div class="item">
@@ -105,12 +104,11 @@
 
       </div>
 
-      <!-- あなたの main.js（そのまま残す） -->
       <script src="js/main.js"></script>
+    </div>
 
-    </kind>
-
-    <map class="map">
+    <!-- ★ map → div に修正 -->
+    <div class="map">
       <div class="container3">
         <div class="item2">
           <p>宮城大学 大和キャンパス<br>
@@ -125,10 +123,11 @@
           <img src="media/tizu.png" width="400" height="300">
         </div>
       </div>
-    </map>
+    </div>
 
   </main>
 
 </body>
 
 </html>
+
